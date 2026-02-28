@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="bn" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maruf Hasan Chowdhury | Personal website</title>
+
+  <!-- Tailwind + DaisyUI -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
+  <style>
+    /* সুন্দর ব্যাকগ্রাউন্ড */
+    body{
+      background:
+        radial-gradient(800px 400px at 15% 20%, rgba(59,130,246,.25), transparent 60%),
+        radial-gradient(700px 380px at 85% 10%, rgba(168,85,247,.22), transparent 60%),
+        radial-gradient(900px 450px at 70% 85%, rgba(16,185,129,.18), transparent 60%),
+        linear-gradient(180deg, #070A12 0%, #0B1220 45%, #070A12 100%);
+    }
+    .glass{
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.10);
+      backdrop-filter: blur(12px);
+    }
+  </style>
+</head>
+
+<body class="min-h-screen text-base-content">
+
+  <!-- ================= NAVBAR (same sections) ================= -->
+  <header class="sticky top-0 z-50">
+    <nav class="navbar glass max-w-6xl mx-auto mt-4 rounded-2xl px-3">
+      <div class="navbar-start">
+        <a href="#home" class="btn btn-ghost text-xl font-bold">My website</a>
+      </div>
+
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 gap-1">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="navbar-end gap-2">
+        
+        <a class="btn btn-primary btn-sm rounded-xl" href="./media/MARUF-CV  (1).pdf" download>
+          Download CV
+        </a>
+
+        <button id="theme-toggle" class="btn btn-ghost btn-sm rounded-xl" title="Theme">🌙</button>
+
+        <!-- Mobile menu -->
+        <div class="dropdown dropdown-end lg:hidden">
+          <div tabindex="0" role="button" class="btn btn-ghost btn-sm rounded-xl">☰</div>
+          <ul tabindex="0" class="dropdown-content menu glass rounded-2xl w-52 p-2 shadow">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- ================= HOME (তোমার intro একই রাখলাম) ================= -->
+  <section id="home" class="max-w-6xl mx-auto px-4 pt-10 pb-6">
+    <div class="glass rounded-3xl p-6 md:p-10 shadow-xl">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <!-- left: photo -->
+        <div class="flex justify-center lg:justify-start">
+          <div class="avatar">
+            <div class="w-52 md:w-64 rounded-3xl ring ring-primary ring-offset-base-100 ring-offset-4">
+              <img src="./media/maruf.jpeg" alt="Maruf Hasan Chowdhury" />
+            </div>
+          </div>
+        </div>
+
+        <!-- right: text (same content) -->
+        <div class="space-y-3">
+          <h1 class="text-3xl md:text-4xl font-extrabold">Welcome to My Website</h1>
+
+          <h2 class="text-xl md:text-2xl font-bold">
+            Hi, I'm <span class="text-primary">MD. MARUF HASAN CHOWDHURY</span>
+          </h2>
+
+          <h3 class="opacity-80 font-semibold">Nickname: Maruf / Yeakin</h3>
+
+          <p class="opacity-90">
+            <span class="font-bold">Research Interests:</span>
+            Artificial Intelligence, Machine Learning, Deep Learning, Data Science, NLP, Computer Vision
+          </p>
+
+          <div class="opacity-90">
+            <p class="font-bold">Development Skills:</p>
+            <ul class="list-disc ml-5 mt-2 space-y-1">
+              <li>Frontend: HTML, CSS, JavaScript</li>
+              <li>Backend: C#, Java, PHP, SQL</li>
+            </ul>
+          </div>
+
+          <p class="opacity-90">
+            <span class="font-bold">Current Study:</span>
+            CSE Student at AIUB (11th Semester)
+          </p>
+
+          <div class="flex flex-wrap gap-3 pt-2">
+            <a href="#projects" class="btn btn-primary rounded-2xl">
+              Explore My Projects
+            </a>
+            <a href="#contact" class="btn btn-outline rounded-2xl">
+              Contact
+            </a>
+          </div>
+
+          <!-- social quick -->
+          <div class="flex flex-wrap gap-3 pt-2">
+            <a class="link link-hover" href="mailto:marufhasanchowdhury06@gmail.com" target="_blank">📧 Email</a>
+            <a class="link link-hover" href="https://github.com/maruf-hasan7081" target="_blank">💻 GitHub</a>
+            <a class="link link-hover" href="https://www.linkedin.com/in/maruf-hasan-chowdhury/" target="_blank">🔗 LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= Video CV section (উপরে সুন্দরভাবে add) ================= -->
+  <section class="max-w-6xl mx-auto px-4 py-8">
+    <div class="glass rounded-3xl p-6 md:p-10 shadow-xl">
+      <div class="flex items-center justify-between gap-4 flex-wrap">
+        <h2 class="text-2xl md:text-3xl font-extrabold">Video CV</h2>
+        <!-- <p class="opacity-80">এখন embedded video আছে—পরে তুমি নিজেরটা replace করে দেবে।</p> -->
+      </div>
+
+      <div class="mt-6 rounded-2xl overflow-hidden border border-white/10">
+        <div class="aspect-video">
+          <iframe
+            class="w-full h-full"
+            src="https://www.youtube.com/embed/h22bKCJlblw?si=IGgtF6U1NfJWI1L_"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= EDUCATION (CV থেকে tidy) ================= -->
+  <section id="education" class="max-w-6xl mx-auto px-4 py-8">
+    <div class="glass rounded-3xl p-6 md:p-10 shadow-xl">
+      <h2 class="text-2xl md:text-3xl font-extrabold mb-6">Education</h2>
+
+      <div class="grid md:grid-cols-3 gap-5">
+        <div class="card bg-base-100/20 border border-white/10 shadow">
+          <div class="card-body">
+            <h3 class="font-bold">Bachelor of Science in CSE</h3>
+            <p class="opacity-80">American International University-Bangladesh (AIUB), Dhaka</p>
+            <p class="opacity-80">CGPA: 3.60 | 11th Semester Running</p>
+          </div>
+        </div>
+
+        <div class="card bg-base-100/20 border border-white/10 shadow">
+          <div class="card-body">
+            <h3 class="font-bold">Higher Secondary Certificate (HSC)</h3>
+            <p class="opacity-80">Scholastica Model College, Narsingdi</p>
+            <p class="opacity-80">GPA: 4.58 | Year: 2021</p>
+          </div>
+        </div>
+
+        <div class="card bg-base-100/20 border border-white/10 shadow">
+          <div class="card-body">
+            <h3 class="font-bold">Secondary School Certificate (SSC)</h3>
+            <p class="opacity-80">Ramgoti B.B.K Pilot Model High School</p>
+            <p class="opacity-80">GPA: 4.39 | Year: 2019</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Links (তোমারটা same) -->
+      <div class="flex flex-wrap gap-3 mt-8">
+        <a class="btn btn-outline btn-sm rounded-xl" href="mailto:marufhasanchowdhury06@gmail.com" target="_blank">📧 Email</a>
+        <a class="btn btn-outline btn-sm rounded-xl" href="https://www.facebook.com/maruphasan.chowdhury.9" target="_blank">📘 Facebook</a>
+        <a class="btn btn-outline btn-sm rounded-xl" href="https://wa.me/01704712465" target="_blank">📱 WhatsApp</a>
+        <a class="btn btn-outline btn-sm rounded-xl" href="https://github.com/maruf-hasan7081" target="_blank">💻 GitHub</a>
+        <a class="btn btn-outline btn-sm rounded-xl" href="https://www.linkedin.com/in/maruf-hasan-chowdhury/" target="_blank">🔗 LinkedIn</a>
+        <a class="btn btn-outline btn-sm rounded-xl" href="https://www.instagram.com/maruf__8048" target="_blank">📸 Instagram</a>
+      </div>
+
+      <!-- Resume iframe (তোমারটা same) -->
+      <div class="mt-10">
+        <h3 class="text-xl font-bold mb-3">My Resume</h3>
+        <div class="rounded-2xl overflow-hidden border border-white/10">
+          <iframe src="./media/MARUF-CV  (1).pdf" width="100%" height="500" frameborder="0"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= SKILLS (same idea but nicer) ================= -->
+  <section id="skills" class="max-w-6xl mx-auto px-4 py-8">
+    <div class="glass rounded-3xl p-6 md:p-10 shadow-xl">
+      <h2 class="text-2xl md:text-3xl font-extrabold mb-6">My Skills</h2>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+        <div class="card bg-base-100/20 border border-white/10 shadow">
+          <div class="card-body">
+            <h3 class="font-bold">Programming Languages</h3>
+            <div class="flex flex-wrap gap-2 mt-2">
+              <span class="badge badge-primary">C++</span>
+              <span class="badge badge-primary">Java</span>
+              <span class="badge badge-primary">C#</span>
+              <span class="badge badge-primary">Python</span>
+              <span class="badge badge-primary">HTML</span>
+              <span class="badge badge-primary">CSS</span>
+              <span class="badge badge-primary">Tailwind</span>
+              <span class="badge badge-primary">JavaScript</span>
+              <span class="badge badge-primary">PHP</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-base-100/20 border border-white/10 shadow">
+          <div class="card-body">
+            <h3 class="font-bold">Database</h3>
+            <div class="flex flex-wrap gap-2 mt-2">
+              <span class="badge">SQL</span>
+              <span class="badge">Microsoft SQL Server</span>
+              <span class="badge">MySQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-base-100/20 border border-white/10 shadow">
+          <div class="card-body">
+            <h3 class="font-bold">Tools & IDEs</h3>
+            <div class="flex flex-wrap gap-2 mt-2">
+              <span class="badge">VS Code</span>
+              <span class="badge">Visual Studio</span>
+              <span class="badge">CodeBlocks</span>
+              <span class="badge">Google Colab</span>
+              <span class="badge">GitHub</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-base-100/20 border border-white/10 shadow">
+          <div class="card-body">
+            <h3 class="font-bold">DSA</h3>
+            <div class="flex flex-wrap gap-2 mt-2">
+              <span class="badge">Linked List</span>
+              <span class="badge">Stack</span>
+              <span class="badge">Queue</span>
+              <span class="badge">Recursion</span>
+              <span class="badge">Graph</span>
+              <span class="badge">Dynamic Programming</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-base-100/20 border border-white/10 shadow">
+          <div class="card-body">
+            <h3 class="font-bold">Operating Systems</h3>
+            <div class="flex flex-wrap gap-2 mt-2">
+              <span class="badge">Windows</span>
+              <span class="badge">Linux</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-base-100/20 border border-white/10 shadow">
+          <div class="card-body">
+            <h3 class="font-bold">Soft Skills</h3>
+            <div class="flex flex-wrap gap-2 mt-2">
+              <span class="badge">Teamwork</span>
+              <span class="badge">Problem-Solving</span>
+              <span class="badge">Communication</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= PROJECTS (keep your idea + default web on load) ================= -->
+  <section id="projects" class="max-w-6xl mx-auto px-4 py-8">
+    <div class="glass rounded-3xl p-6 md:p-10 shadow-xl">
+      <h2 class="text-2xl md:text-3xl font-extrabold mb-2">My Projects</h2> <br> <br>
+      <!-- <p class="opacity-80 mb-6">Page load হলে ডিফল্টভাবে শুধু Web Development projects দেখাবে।</p> -->
+
+      <!-- Filter Buttons -->
+      <div class="flex flex-wrap gap-3 mb-8">
+        <button class="btn btn-sm rounded-xl filter-btn" data-filter="web">Web Development</button>
+        <button class="btn btn-sm rounded-xl btn-ghost filter-btn" data-filter="C#">C#</button>
+        <button class="btn btn-sm rounded-xl btn-ghost filter-btn" data-filter="SQL">SQL</button>
+        <button class="btn btn-sm rounded-xl btn-ghost filter-btn" data-filter="nlp">NLP</button>
+        <button class="btn btn-sm rounded-xl btn-ghost filter-btn" data-filter="data">Data Science</button>
+        <button class="btn btn-sm rounded-xl btn-ghost filter-btn" data-filter="all">All</button>
+      </div>
+
+      <!-- Project Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Web project template (তুমি এখানে web projects add করবে) -->
+        <div class="card bg-base-100/15 border border-white/10 shadow hover:shadow-2xl transition hover:-translate-y-1 project web">
+          <figure class="h-44 overflow-hidden">
+            <img src="./media/pio.png" class="w-full h-full object-cover" alt="Project image">
+          </figure>
+          <div class="card-body">
+            <h3 class="card-title">Payoo – Digital Wallet Web App</h3>
+            <p class="opacity-80">HTML, Tailwind CSS, DaisyUI, JavaScript DOM features.</p>
+            <div class="card-actions justify-end">
+              <a class="btn btn-primary btn-sm rounded-xl" href="https://maruf-hasan7081.github.io/payoo-website/" target="_blank">Live</a>
+              <a class="btn btn-outline btn-sm rounded-xl" href="https://github.com/maruf-hasan7081/payoo-website" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+         <div class="card bg-base-100/15 border border-white/10 shadow hover:shadow-2xl transition hover:-translate-y-1 project web">
+          <figure class="h-44 overflow-hidden">
+            <img src="./media/job.png" class="w-full h-full object-cover" alt="Project image">
+          </figure>
+          <div class="card-body">
+            <h3 class="card-title">Job-Tracker Web App</h3>
+            <p class="opacity-80">HTML, Tailwind CSS, DaisyUI, JavaScript DOM features.</p>
+            <div class="card-actions justify-end">
+              <a class="btn btn-primary btn-sm rounded-xl" href="https://maruf-hasan7081.github.io/B13_A4/" target="_blank">Live</a>
+              <a class="btn btn-outline btn-sm rounded-xl" href="https://github.com/maruf-hasan7081/B13_A4" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web project placeholder -->
+        <div class="card bg-base-100/15 border border-white/10 shadow hover:shadow-2xl transition hover:-translate-y-1 project web">
+          <figure class="h-44 overflow-hidden">
+            <img src="project2.jpg" class="w-full h-full object-cover" alt="Project image">
+          </figure>
+          <div class="card-body">
+            <h3 class="card-title">Web Project (Add next)</h3>
+            <p class="opacity-80">তুমি আস্তে আস্তে web development এর সব project add করবে।</p>
+            <div class="card-actions justify-end">
+              <a class="btn btn-primary btn-sm rounded-xl" href="" target="_blank">Live</a>
+              <a class="btn btn-outline btn-sm rounded-xl" href="" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- NLP (hidden by default, show when click) -->
+        <div class="card bg-base-100/15 border border-white/10 shadow hover:shadow-2xl transition hover:-translate-y-1 project nlp">
+          <figure class="h-44 overflow-hidden">
+            <img src="project3.jpg" class="w-full h-full object-cover" alt="Project image">
+          </figure>
+          <div class="card-body">
+            <h3 class="card-title">NLP Project (Later)</h3>
+            <p class="opacity-80">NLP related project placeholder.</p>
+            <div class="card-actions justify-end">
+              <a class="btn btn-outline btn-sm rounded-xl" href="#" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Data Science (hidden by default, show when click) -->
+        <div class="card bg-base-100/15 border border-white/10 shadow hover:shadow-2xl transition hover:-translate-y-1 project data">
+          <figure class="h-44 overflow-hidden">
+            <img src="project4.jpg" class="w-full h-full object-cover" alt="Project image">
+          </figure>
+          <div class="card-body">
+            <h3 class="card-title">Data Science Project (Later)</h3>
+            <p class="opacity-80">Data science project placeholder.</p>
+            <div class="card-actions justify-end">
+              <a class="btn btn-outline btn-sm rounded-xl" href="#" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= ACHIEVEMENTS (same section) ================= -->
+  <section id="achievements" class="max-w-6xl mx-auto px-4 py-8">
+    <div class="glass rounded-3xl p-6 md:p-10 shadow-xl">
+      <h2 class="text-2xl md:text-3xl font-extrabold mb-6">Extracurricular Activities & Achievements</h2>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="card bg-base-100/15 border border-white/10 shadow">
+          <div class="card-body">
+            <p>🏆 Excellent Performance in the "SCIENCE POSTER CONTEST - FALL 2022-2023 AS A FRESHMAN"</p>
+            <a class="link link-primary" href="https://surl.li/bdrlxm" target="_blank">View Certificate</a>
+          </div>
+        </div>
+
+        <div class="card bg-base-100/15 border border-white/10 shadow">
+          <div class="card-body">
+            <p>🏆 Excellent Performance in the "SCIENCE POSTER CONTEST - SPRING 2022-2023"</p>
+            <a class="link link-primary" href="https://surl.li/hhipqw" target="_blank">View Certificate</a>
+          </div>
+        </div>
+
+        <div class="card bg-base-100/15 border border-white/10 shadow">
+          <div class="card-body">
+            <p>💻 Completed the IT Essentials course (Cisco Networking Academy®)</p>
+            <a class="link link-primary" href="https://surl.li/yuxcyj" target="_blank">View Certificate</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= CONTACT (same idea) ================= -->
+  <section id="contact" class="max-w-6xl mx-auto px-4 py-10">
+    <div class="glass rounded-3xl p-6 md:p-10 shadow-xl">
+      <h2 class="text-2xl md:text-3xl font-extrabold mb-6">Contact Me</h2>
+
+      <form id="contactForm" class="grid gap-4 max-w-xl">
+        <input type="text" placeholder="Your Name" required class="input input-bordered rounded-2xl w-full bg-base-100/10" />
+        <input type="email" placeholder="Your Email" required class="input input-bordered rounded-2xl w-full bg-base-100/10" />
+        <textarea placeholder="Your Message" required class="textarea textarea-bordered rounded-2xl w-full bg-base-100/10"></textarea>
+        <button type="submit" class="btn btn-primary rounded-2xl">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="max-w-6xl mx-auto px-4 pb-10">
+    <div class="glass rounded-2xl p-5 text-center opacity-80">
+      <p>© 2026 MyPortfolio | All Rights Reserved</p>
+    </div>
+  </footer>
+
+
+  <script>
+    // ========== Theme toggle ==========
+    const themeBtn = document.getElementById("theme-toggle");
+    themeBtn.addEventListener("click", () => {
+      const html = document.documentElement;
+      const isDark = html.getAttribute("data-theme") === "dark";
+      html.setAttribute("data-theme", isDark ? "light" : "dark");
+      themeBtn.textContent = isDark ? "🌙" : "☀️";
+    });
+
+    // ========== Project filtering ==========
+    const buttons = document.querySelectorAll(".filter-btn");
+    const projects = document.querySelectorAll(".project");
+
+    function setActiveButton(activeBtn){
+      buttons.forEach(b => {
+        b.classList.add("btn-ghost");
+        b.classList.remove("btn-primary");
+      });
+      activeBtn.classList.remove("btn-ghost");
+      activeBtn.classList.add("btn-primary");
+    }
+
+    function filterProjects(filter){
+      projects.forEach(p => {
+        const ok = (filter === "all") || p.classList.contains(filter);
+        p.style.display = ok ? "block" : "none";
+      });
+    }
+
+    // Page load: default show WEB only
+    window.addEventListener("load", () => {
+      const webBtn = document.querySelector('.filter-btn[data-filter="web"]');
+      setActiveButton(webBtn);
+      filterProjects("web");
+    });
+
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const filter = btn.dataset.filter;
+        setActiveButton(btn);
+        filterProjects(filter);
+      });
+    });
+  </script>
+
+</body>
+</html>
