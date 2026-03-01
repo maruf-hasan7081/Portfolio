@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="bn" data-theme="dark">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,51 +9,138 @@
   <!-- Tailwind + DaisyUI -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
-    /* সুন্দর ব্যাকগ্রাউন্ড */
-    body{
+    body {
+    font-family: 'Inter', sans-serif;
       background:
-        radial-gradient(800px 400px at 15% 20%, rgba(59,130,246,.25), transparent 60%),
-        radial-gradient(700px 380px at 85% 10%, rgba(168,85,247,.22), transparent 60%),
-        radial-gradient(900px 450px at 70% 85%, rgba(16,185,129,.18), transparent 60%),
+        radial-gradient(800px 400px at 15% 20%, rgba(59, 130, 246, .25), transparent 60%),
+        radial-gradient(700px 380px at 85% 10%, rgba(168, 85, 247, .22), transparent 60%),
+        radial-gradient(900px 450px at 70% 85%, rgba(16, 185, 129, .18), transparent 60%),
         linear-gradient(180deg, #070A12 0%, #0B1220 45%, #070A12 100%);
+
     }
-    .glass{
-      background: rgba(255,255,255,.06);
-      border: 1px solid rgba(255,255,255,.10);
+
+    .glass {
+      background: rgba(255, 255, 255, .06);
+      border: 1px solid rgba(255, 255, 255, .10);
       backdrop-filter: blur(12px);
+    }
+
+    /* smooth */
+    html {
+      scroll-behavior: smooth;
     }
   </style>
 </head>
 
 <body class="min-h-screen text-base-content">
 
-  <!-- ================= NAVBAR (same sections) ================= -->
-  <header class="sticky top-0 z-50">
-    <nav class="navbar glass max-w-6xl mx-auto mt-4 rounded-2xl px-3">
-      <div class="navbar-start">
-        <a href="#home" class="btn btn-ghost text-xl font-bold">My website</a>
-      </div>
+<!-- ================= NAVBAR ================= -->
+<header class="sticky top-0 z-50">
 
-      <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1 gap-1">
+  <nav class="navbar glass max-w-6xl mx-auto mt-4 rounded-2xl px-4 shadow-2xl border border-white/10 backdrop-blur-lg">
+
+    <!-- LOGO -->
+    <div class="navbar-start">
+
+      <a href="#home" class="text-xl font-extrabold tracking-wide text-primary">
+        Maruf
+      </a>
+
+    </div>
+
+
+    <!-- DESKTOP MENU -->
+    <div class="navbar-center hidden lg:flex">
+
+      <ul class="menu menu-horizontal px-1 gap-2 font-medium">
+
+        <li><a class="hover:text-primary transition" href="#home">Home</a></li>
+
+        <li><a class="hover:text-primary transition" href="#education">Education</a></li>
+
+        <li><a class="hover:text-primary transition" href="#experience">Experience</a></li>
+
+        <li><a class="hover:text-primary transition" href="#courses">Courses</a></li>
+
+        <li><a class="hover:text-primary transition" href="#skills">Skills</a></li>
+
+        <li><a class="hover:text-primary transition" href="#projects">Projects</a></li>
+
+        <li><a class="hover:text-primary transition" href="#achievements">Achievements</a></li>
+
+        <li><a class="hover:text-primary transition" href="#contact">Contact</a></li>
+
+      </ul>
+
+    </div>
+
+
+    <!-- RIGHT SIDE -->
+    <div class="navbar-end gap-2">
+
+      <!-- CV BUTTON -->
+      <a class="btn btn-primary btn-sm rounded-xl shadow-lg hover:scale-105 transition"
+         href="./media/MARUF-CV  (1).pdf"
+         download>
+
+        Download CV
+
+      </a>
+
+
+      <!-- THEME TOGGLE -->
+      <button id="theme-toggle"
+              class="btn btn-ghost btn-sm rounded-xl text-lg hover:bg-base-100/20"
+              title="Theme">
+
+        🌙
+
+      </button>
+
+
+      <!-- MOBILE MENU -->
+      <div class="dropdown dropdown-end lg:hidden">
+
+        <div tabindex="0" role="button" class="btn btn-ghost btn-sm rounded-xl">
+
+          ☰
+
+        </div>
+
+        <ul tabindex="0"
+            class="dropdown-content menu p-3 shadow-xl glass rounded-2xl w-56 mt-3 border border-white/10">
+
           <li><a href="#home">Home</a></li>
+
           <li><a href="#education">Education</a></li>
+
+          <li><a href="#experience">Experience</a></li>
+
+          <li><a href="#courses">Courses</a></li>
+
           <li><a href="#skills">Skills</a></li>
+
           <li><a href="#projects">Projects</a></li>
+
           <li><a href="#achievements">Achievements</a></li>
+
           <li><a href="#contact">Contact</a></li>
+
         </ul>
+
       </div>
 
-      <div class="navbar-end gap-2">
-        
-        <a class="btn btn-primary btn-sm rounded-xl" href="./media/MARUF-CV  (1).pdf" download>
-          Download CV
-        </a>
+    </div>
 
-        <button id="theme-toggle" class="btn btn-ghost btn-sm rounded-xl" title="Theme">🌙</button>
+  </nav>
+
+</header>
 
         <!-- Mobile menu -->
         <div class="dropdown dropdown-end lg:hidden">
@@ -70,8 +158,7 @@
     </nav>
   </header>
 
-
-  <!-- ================= HOME (তোমার intro একই রাখলাম) ================= -->
+  <!-- ================= HOME ================= -->
   <section id="home" class="max-w-6xl mx-auto px-4 pt-10 pb-6">
     <div class="glass rounded-3xl p-6 md:p-10 shadow-xl">
       <div class="grid lg:grid-cols-2 gap-10 items-center">
@@ -84,7 +171,7 @@
           </div>
         </div>
 
-        <!-- right: text (same content) -->
+        <!-- right: text -->
         <div class="space-y-3">
           <h1 class="text-3xl md:text-4xl font-extrabold">Welcome to My Website</h1>
 
@@ -113,52 +200,64 @@
           </p>
 
           <div class="flex flex-wrap gap-3 pt-2">
-            <a href="#projects" class="btn btn-primary rounded-2xl">
-              Explore My Projects
-            </a>
-            <a href="#contact" class="btn btn-outline rounded-2xl">
-              Contact
-            </a>
+            <a href="#projects" class="btn btn-primary rounded-2xl">Explore My Projects</a>
+            <a href="#contact" class="btn btn-outline rounded-2xl">Contact</a>
           </div>
 
-          <!-- social quick -->
           <div class="flex flex-wrap gap-3 pt-2">
             <a class="link link-hover" href="mailto:marufhasanchowdhury06@gmail.com" target="_blank">📧 Email</a>
             <a class="link link-hover" href="https://github.com/maruf-hasan7081" target="_blank">💻 GitHub</a>
-            <a class="link link-hover" href="https://www.linkedin.com/in/maruf-hasan-chowdhury/" target="_blank">🔗 LinkedIn</a>
+            <a class="link link-hover" href="https://www.linkedin.com/in/maruf-hasan-chowdhury/" target="_blank">🔗
+              LinkedIn</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- ================= Video CV ================= -->
+  <section class="max-w-6xl mx-auto px-4 py-12">
 
-  <!-- ================= Video CV section (উপরে সুন্দরভাবে add) ================= -->
-  <section class="max-w-6xl mx-auto px-4 py-8">
-    <div class="glass rounded-3xl p-6 md:p-10 shadow-xl">
-      <div class="flex items-center justify-between gap-4 flex-wrap">
-        <h2 class="text-2xl md:text-3xl font-extrabold">Video CV</h2>
-        <!-- <p class="opacity-80">এখন embedded video আছে—পরে তুমি নিজেরটা replace করে দেবে।</p> -->
-      </div>
+  <div class="glass rounded-3xl p-8 md:p-12 shadow-xl text-center">
 
-      <div class="mt-6 rounded-2xl overflow-hidden border border-white/10">
+    <!-- Title -->
+    <h2 class="text-3xl md:text-4xl font-extrabold mb-2">
+      Video CV
+    </h2>
+
+    <!-- Subtitle -->
+    <h3 class="text-sm md:text-base opacity-70 mb-6">
+      It's not me — I will add my own Video CV later.
+    </h3>
+
+    <!-- Video -->
+    <div class="flex justify-center">
+
+      <div class="w-full max-w-3xl rounded-2xl overflow-hidden border border-white/10 shadow-lg">
+
         <div class="aspect-video">
+
           <iframe
             class="w-full h-full"
-            src="https://www.youtube.com/embed/h22bKCJlblw?si=IGgtF6U1NfJWI1L_"
+            src="https://www.youtube.com/embed/d-pHWe1S-KQ?si=qVPjr-4Xb3zf0Hy0"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen>
           </iframe>
+
         </div>
+
       </div>
+
     </div>
-  </section>
+
+  </div>
+
+</section>
 
 
-  <!-- ================= EDUCATION (CV থেকে tidy) ================= -->
+  <!-- ================= EDUCATION ================= -->
   <section id="education" class="max-w-6xl mx-auto px-4 py-8">
     <div class="glass rounded-3xl p-6 md:p-10 shadow-xl">
       <h2 class="text-2xl md:text-3xl font-extrabold mb-6">Education</h2>
@@ -189,17 +288,20 @@
         </div>
       </div>
 
-      <!-- Social Links (তোমারটা same) -->
       <div class="flex flex-wrap gap-3 mt-8">
-        <a class="btn btn-outline btn-sm rounded-xl" href="mailto:marufhasanchowdhury06@gmail.com" target="_blank">📧 Email</a>
-        <a class="btn btn-outline btn-sm rounded-xl" href="https://www.facebook.com/maruphasan.chowdhury.9" target="_blank">📘 Facebook</a>
+        <a class="btn btn-outline btn-sm rounded-xl" href="mailto:marufhasanchowdhury06@gmail.com" target="_blank">📧
+          Email</a>
+        <a class="btn btn-outline btn-sm rounded-xl" href="https://www.facebook.com/maruphasan.chowdhury.9"
+          target="_blank">📘 Facebook</a>
         <a class="btn btn-outline btn-sm rounded-xl" href="https://wa.me/01704712465" target="_blank">📱 WhatsApp</a>
-        <a class="btn btn-outline btn-sm rounded-xl" href="https://github.com/maruf-hasan7081" target="_blank">💻 GitHub</a>
-        <a class="btn btn-outline btn-sm rounded-xl" href="https://www.linkedin.com/in/maruf-hasan-chowdhury/" target="_blank">🔗 LinkedIn</a>
-        <a class="btn btn-outline btn-sm rounded-xl" href="https://www.instagram.com/maruf__8048" target="_blank">📸 Instagram</a>
+        <a class="btn btn-outline btn-sm rounded-xl" href="https://github.com/maruf-hasan7081" target="_blank">💻
+          GitHub</a>
+        <a class="btn btn-outline btn-sm rounded-xl" href="https://www.linkedin.com/in/maruf-hasan-chowdhury/"
+          target="_blank">🔗 LinkedIn</a>
+        <a class="btn btn-outline btn-sm rounded-xl" href="https://www.instagram.com/maruf__8048" target="_blank">📸
+          Instagram</a>
       </div>
 
-      <!-- Resume iframe (তোমারটা same) -->
       <div class="mt-10">
         <h3 class="text-xl font-bold mb-3">My Resume</h3>
         <div class="rounded-2xl overflow-hidden border border-white/10">
@@ -209,14 +311,12 @@
     </div>
   </section>
 
-
-  <!-- ================= SKILLS (same idea but nicer) ================= -->
+  <!-- ================= SKILLS ================= -->
   <section id="skills" class="max-w-6xl mx-auto px-4 py-8">
     <div class="glass rounded-3xl p-6 md:p-10 shadow-xl">
       <h2 class="text-2xl md:text-3xl font-extrabold mb-6">My Skills</h2>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-
         <div class="card bg-base-100/20 border border-white/10 shadow">
           <div class="card-body">
             <h3 class="font-bold">Programming Languages</h3>
@@ -260,7 +360,7 @@
 
         <div class="card bg-base-100/20 border border-white/10 shadow">
           <div class="card-body">
-            <h3 class="font-bold">DSA</h3>
+            <h3 class="font-bold">Data Structure</h3>
             <div class="flex flex-wrap gap-2 mt-2">
               <span class="badge">Linked List</span>
               <span class="badge">Stack</span>
@@ -292,33 +392,52 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
-
-  <!-- ================= PROJECTS (keep your idea + default web on load) ================= -->
+  <!-- ================= PROJECTS ================= -->
   <section id="projects" class="max-w-6xl mx-auto px-4 py-8">
     <div class="glass rounded-3xl p-6 md:p-10 shadow-xl">
-      <h2 class="text-2xl md:text-3xl font-extrabold mb-2">My Projects</h2> <br> <br>
-      <!-- <p class="opacity-80 mb-6">Page load হলে ডিফল্টভাবে শুধু Web Development projects দেখাবে।</p> -->
+      <h2 class="text-2xl md:text-3xl font-extrabold mb-6">My Projects</h2>
 
-      <!-- Filter Buttons -->
+      <!-- Filter Buttons (beautiful + fixed) -->
       <div class="flex flex-wrap gap-3 mb-8">
-        <button class="btn btn-sm rounded-xl filter-btn" data-filter="web">Web Development</button>
-        <button class="btn btn-sm rounded-xl btn-ghost filter-btn" data-filter="C#">C#</button>
-        <button class="btn btn-sm rounded-xl btn-ghost filter-btn" data-filter="SQL">SQL</button>
-        <button class="btn btn-sm rounded-xl btn-ghost filter-btn" data-filter="nlp">NLP</button>
-        <button class="btn btn-sm rounded-xl btn-ghost filter-btn" data-filter="data">Data Science</button>
-        <button class="btn btn-sm rounded-xl btn-ghost filter-btn" data-filter="all">All</button>
+        <button
+          class="btn btn-sm rounded-full px-5 glass border border-white/15 hover:border-primary/60 hover:shadow-lg filter-btn"
+          data-filter="web">Web</button>
+
+        <button
+          class="btn btn-sm rounded-full px-5 glass border border-white/15 hover:border-primary/60 hover:shadow-lg btn-ghost filter-btn"
+          data-filter="csharp">C#</button>
+
+        <button
+          class="btn btn-sm rounded-full px-5 glass border border-white/15 hover:border-primary/60 hover:shadow-lg btn-ghost filter-btn"
+          data-filter="sql">SQL</button>
+
+        <button
+          class="btn btn-sm rounded-full px-5 glass border border-white/15 hover:border-primary/60 hover:shadow-lg btn-ghost filter-btn"
+          data-filter="software-engineering">Software Engineering</button>
+
+        <button
+          class="btn btn-sm rounded-full px-5 glass border border-white/15 hover:border-primary/60 hover:shadow-lg btn-ghost filter-btn"
+          data-filter="nlp">NLP</button>
+
+        <button
+          class="btn btn-sm rounded-full px-5 glass border border-white/15 hover:border-primary/60 hover:shadow-lg btn-ghost filter-btn"
+          data-filter="data">Data Science</button>
+
+        <button
+          class="btn btn-sm rounded-full px-5 glass border border-white/15 hover:border-primary/60 hover:shadow-lg btn-ghost filter-btn"
+          data-filter="all">All</button>
       </div>
 
       <!-- Project Grid -->
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-        <!-- Web project template (তুমি এখানে web projects add করবে) -->
-        <div class="card bg-base-100/15 border border-white/10 shadow hover:shadow-2xl transition hover:-translate-y-1 project web">
+        <!-- WEB -->
+        <div
+          class="card bg-base-100/15 border border-white/10 shadow hover:shadow-2xl transition hover:-translate-y-1 hover:scale-[1.02] duration-300 project web">
           <figure class="h-44 overflow-hidden">
             <img src="./media/pio.png" class="w-full h-full object-cover" alt="Project image">
           </figure>
@@ -326,13 +445,16 @@
             <h3 class="card-title">Payoo – Digital Wallet Web App</h3>
             <p class="opacity-80">HTML, Tailwind CSS, DaisyUI, JavaScript DOM features.</p>
             <div class="card-actions justify-end">
-              <a class="btn btn-primary btn-sm rounded-xl" href="https://maruf-hasan7081.github.io/payoo-website/" target="_blank">Live</a>
-              <a class="btn btn-outline btn-sm rounded-xl" href="https://github.com/maruf-hasan7081/payoo-website" target="_blank">GitHub</a>
+              <a class="btn btn-primary btn-sm rounded-xl" href="https://maruf-hasan7081.github.io/payoo-website/"
+                target="_blank">Live</a>
+              <a class="btn btn-outline btn-sm rounded-xl" href="https://github.com/maruf-hasan7081/payoo-website"
+                target="_blank">GitHub</a>
             </div>
           </div>
         </div>
 
-         <div class="card bg-base-100/15 border border-white/10 shadow hover:shadow-2xl transition hover:-translate-y-1 project web">
+        <div
+          class="card bg-base-100/15 border border-white/10 shadow hover:shadow-2xl transition hover:-translate-y-1 hover:scale-[1.02] duration-300 project web">
           <figure class="h-44 overflow-hidden">
             <img src="./media/job.png" class="w-full h-full object-cover" alt="Project image">
           </figure>
@@ -340,79 +462,133 @@
             <h3 class="card-title">Job-Tracker Web App</h3>
             <p class="opacity-80">HTML, Tailwind CSS, DaisyUI, JavaScript DOM features.</p>
             <div class="card-actions justify-end">
-              <a class="btn btn-primary btn-sm rounded-xl" href="https://maruf-hasan7081.github.io/B13_A4/" target="_blank">Live</a>
-              <a class="btn btn-outline btn-sm rounded-xl" href="https://github.com/maruf-hasan7081/B13_A4" target="_blank">GitHub</a>
+              <a class="btn btn-primary btn-sm rounded-xl" href="https://maruf-hasan7081.github.io/B13_A4/"
+                target="_blank">Live</a>
+              <a class="btn btn-outline btn-sm rounded-xl" href="https://github.com/maruf-hasan7081/B13_A4"
+                target="_blank">GitHub</a>
             </div>
           </div>
         </div>
 
-         <div class="card bg-base-100/15 border border-white/10 shadow hover:shadow-2xl transition hover:-translate-y-1 project web">
+        <div
+          class="card bg-base-100/15 border border-white/10 shadow hover:shadow-2xl transition hover:-translate-y-1 hover:scale-[1.02] duration-300 project web">
           <figure class="h-44 overflow-hidden">
             <img src="./media/Techwave.png" class="w-full h-full object-cover" alt="Project image">
           </figure>
           <div class="card-body">
             <h3 class="card-title">TechWave Web App</h3>
-            <p class="opacity-80">HTML,CSS.</p>
+            <p class="opacity-80">HTML, CSS.</p>
             <div class="card-actions justify-end">
-              <a class="btn btn-primary btn-sm rounded-xl" href="https://maruf-hasan7081.github.io/B13_A2/" target="_blank">Live</a>
-              <a class="btn btn-outline btn-sm rounded-xl" href="https://github.com/maruf-hasan7081/B13_A2" target="_blank">GitHub</a>
+              <a class="btn btn-primary btn-sm rounded-xl" href="https://maruf-hasan7081.github.io/B13_A2/"
+                target="_blank">Live</a>
+              <a class="btn btn-outline btn-sm rounded-xl" href="https://github.com/maruf-hasan7081/B13_A2"
+                target="_blank">GitHub</a>
             </div>
           </div>
         </div>
 
-         <div class="card bg-base-100/15 border border-white/10 shadow hover:shadow-2xl transition hover:-translate-y-1 project web">
+        <div
+          class="card bg-base-100/15 border border-white/10 shadow hover:shadow-2xl transition hover:-translate-y-1 hover:scale-[1.02] duration-300 project web">
           <figure class="h-44 overflow-hidden">
             <img src="./media/KV.png" class="w-full h-full object-cover" alt="Project image">
           </figure>
           <div class="card-body">
             <h3 class="card-title">KV Web App</h3>
-            <p class="opacity-80">HTML,CSS.</p>
+            <p class="opacity-80">HTML, CSS.</p>
             <div class="card-actions justify-end">
-              <a class="btn btn-primary btn-sm rounded-xl" href="https://maruf-hasan7081.github.io/Assingment1/" target="_blank">Live</a>
-              <a class="btn btn-outline btn-sm rounded-xl" href="https://github.com/maruf-hasan7081/Assingment1" target="_blank">GitHub</a>
+              <a class="btn btn-primary btn-sm rounded-xl" href="https://maruf-hasan7081.github.io/Assingment1/"
+                target="_blank">Live</a>
+              <a class="btn btn-outline btn-sm rounded-xl" href="https://github.com/maruf-hasan7081/Assingment1"
+                target="_blank">GitHub</a>
             </div>
           </div>
         </div>
 
-        <!-- Web project placeholder -->
-        <div class="card bg-base-100/15 border border-white/10 shadow hover:shadow-2xl transition hover:-translate-y-1 project web">
+        <!-- C# -->
+        <div
+          class="card bg-base-100/15 border border-white/10 shadow hover:shadow-2xl transition hover:-translate-y-1 hover:scale-[1.02] duration-300 project csharp">
           <figure class="h-44 overflow-hidden">
-            <img src="project2.jpg" class="w-full h-full object-cover" alt="Project image">
+            <img src="./media/PARMACY.jpg" class="w-full h-full object-cover" alt="Project image">
           </figure>
           <div class="card-body">
-            <h3 class="card-title">Web Project (Add next)</h3>
-            <p class="opacity-80">তুমি আস্তে আস্তে web development এর সব project add করবে।</p>
+            <h3 class="card-title">PHARMACY MANAGEMENT SYSTEM</h3>
+            <p class="opacity-80">C#, SQL SERVER</p>
             <div class="card-actions justify-end">
-              <a class="btn btn-primary btn-sm rounded-xl" href="" target="_blank">Live</a>
-              <a class="btn btn-outline btn-sm rounded-xl" href="" target="_blank">GitHub</a>
+              <a class="btn btn-outline btn-sm rounded-xl" href="https://github.com/maruf-hasan7081/CSharp_Project"
+                target="_blank">GitHub</a>
             </div>
           </div>
         </div>
 
-        <!-- NLP (hidden by default, show when click) -->
-        <div class="card bg-base-100/15 border border-white/10 shadow hover:shadow-2xl transition hover:-translate-y-1 project nlp">
+        <!-- SQL -->
+        <div
+          class="card bg-base-100/15 border border-white/10 shadow hover:shadow-2xl transition hover:-translate-y-1 hover:scale-[1.02] duration-300 project sql">
           <figure class="h-44 overflow-hidden">
-            <img src="project3.jpg" class="w-full h-full object-cover" alt="Project image">
+            <img src="./media/PARMACY.jpg" class="w-full h-full object-cover" alt="Project image">
           </figure>
           <div class="card-body">
-            <h3 class="card-title">NLP Project (Later)</h3>
-            <p class="opacity-80">NLP related project placeholder.</p>
+            <h3 class="card-title">PHARMACY MANAGEMENT SYSTEM</h3>
+            <p class="opacity-80">ORACLE DATABASE ONLY</p>
             <div class="card-actions justify-end">
-              <a class="btn btn-outline btn-sm rounded-xl" href="#" target="_blank">GitHub</a>
+              <a class="btn btn-outline btn-sm rounded-xl" href="https://github.com/maruf-hasan7081/oracal-database"
+                target="_blank">GitHub</a>
             </div>
           </div>
         </div>
 
-        <!-- Data Science (hidden by default, show when click) -->
-        <div class="card bg-base-100/15 border border-white/10 shadow hover:shadow-2xl transition hover:-translate-y-1 project data">
+        <!-- NLP -->
+        <div
+          class="card bg-base-100/15 border border-white/10 shadow hover:shadow-2xl transition hover:-translate-y-1 hover:scale-[1.02] duration-300 project nlp">
           <figure class="h-44 overflow-hidden">
-            <img src="project4.jpg" class="w-full h-full object-cover" alt="Project image">
+            <img src="./media/fake.jpg" class="w-full h-full object-cover" alt="Project image">
           </figure>
           <div class="card-body">
-            <h3 class="card-title">Data Science Project (Later)</h3>
-            <p class="opacity-80">Data science project placeholder.</p>
+            <h3 class="card-title">NLP PROJECT</h3>
+            <h3 class="card-title">FAKE NEWS DETECTION</h3>
+            <p class="opacity-80">
+              Data Loading → Cleaning → Preprocessing → TF-IDF → Train/Test → Naïve Bayes → Evaluation
+            </p>
             <div class="card-actions justify-end">
-              <a class="btn btn-outline btn-sm rounded-xl" href="#" target="_blank">GitHub</a>
+              <a class="btn btn-outline btn-sm rounded-xl"
+                href="https://github.com/maruf-hasan7081/-Natural-language-processing--NLP-/blob/main/nlp_mid_project_group_08.pdf"
+                target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card bg-base-100/15 border border-white/10 shadow hover:shadow-2xl transition hover:-translate-y-1 hover:scale-[1.02] duration-300 project nlp">
+          <figure class="h-44 overflow-hidden">
+            <img src="./media/ai-content-detectors.png" class="w-full h-full object-cover" alt="Project image">
+          </figure>
+          <div class="card-body">
+            <h3 class="card-title">NLP PROJECT</h3>
+            <h3 class="card-title">AI Content Detection (BERT & DistilBERT)</h3>
+            <p class="opacity-80">
+              Model-1: Load → Clean → Split → Tokenize (BERT) → Train → Evaluate
+              <br />
+              Model-2: Load → Clean → Split → Tokenize (DistilBERT) → Train → Evaluate
+            </p>
+            <div class="card-actions justify-end">
+              <a class="btn btn-outline btn-sm rounded-xl"
+                href="https://github.com/maruf-hasan7081/-Natural-language-processing--NLP-/blob/main/final/nlp_final_project_group_08.pdf"
+                target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Software Engineering -->
+        <div
+          class="card bg-base-100/15 border border-white/10 shadow hover:shadow-2xl transition hover:-translate-y-1 hover:scale-[1.02] duration-300 project software-engineering">
+          <figure class="h-44 overflow-hidden">
+            <img src="./media/appod.png" class="w-full h-full object-cover" alt="Project image">
+          </figure>
+          <div class="card-body">
+            <h3 class="card-title">Software Engineering Documentation</h3>
+            <p class="opacity-80">Affordable Car and Motor Bike Subscription</p>
+            <div class="card-actions justify-end">
+              <a class="btn btn-outline btn-sm rounded-xl" href="https://github.com/maruf-hasan7081/software-project"
+                target="_blank">GitHub</a>
             </div>
           </div>
         </div>
@@ -422,61 +598,403 @@
   </section>
 
 
-  <!-- ================= ACHIEVEMENTS (same section) ================= -->
-  <section id="achievements" class="max-w-6xl mx-auto px-4 py-8">
-    <div class="glass rounded-3xl p-6 md:p-10 shadow-xl">
-      <h2 class="text-2xl md:text-3xl font-extrabold mb-6">Extracurricular Activities & Achievements</h2>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-        <div class="card bg-base-100/15 border border-white/10 shadow">
+  <section id="experience" class="max-w-6xl mx-auto px-4 py-16">
+
+  <div class="glass rounded-3xl p-8 md:p-12 shadow-xl">
+
+    <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-12">
+      Work Experience
+    </h2>
+
+    <div class="relative border-l-2 border-primary pl-8">
+
+      <!-- Experience Card -->
+      <div class="mb-10">
+
+        <span class="absolute -left-3 flex items-center justify-center w-6 h-6 bg-primary rounded-full"></span>
+
+        <div class="card bg-base-100/10 border border-white/10 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition duration-300">
+
           <div class="card-body">
-            <p>🏆 Excellent Performance in the "SCIENCE POSTER CONTEST - FALL 2022-2023 AS A FRESHMAN"</p>
-            <a class="link link-primary" href="https://surl.li/bdrlxm" target="_blank">View Certificate</a>
+
+            <div class="flex flex-wrap items-center justify-between gap-3">
+
+              <h3 class="text-xl font-bold text-primary">
+                Java Development Intern
+              </h3>
+
+              <span class="badge badge-primary badge-outline">
+                Internship
+              </span>
+
+            </div>
+
+            <p class="font-semibold">
+              Codveda Technologies (Remote)
+            </p>
+
+            <p class="text-sm opacity-70">
+              📅 3 Dec 2025 – 3 Jan 2026
+            </p>
+
+            <ul class="mt-4 space-y-2 opacity-90">
+
+              <li>⚙️ Worked with Java OOP concepts and file handling.</li>
+
+              <li>🏦 Developed CRUD-based banking application logic.</li>
+
+              <li>🗄️ Implemented JDBC database operations.</li>
+
+              <li>🌳 Built Binary Search Tree (BST) data structure implementation.</li>
+
+              <li>💬 Developed a multithreaded chat application.</li>
+
+            </ul>
+
+            <div class="mt-5">
+
+              <a href="https://github.com/maruf-hasan7081/Java_Development_Intern_work/blob/main/Md.Maruf%20Hasan%20Chowdhury(Offer%20letter).pdf" class="btn btn-primary btn-sm rounded-xl">View Offer Letter</a>
+              <a href="https://github.com/maruf-hasan7081/Java_Development_Intern_work" class="btn btn-primary btn-sm rounded-xl">Work</a>
+
+            </div>
+
           </div>
+
         </div>
 
-        <div class="card bg-base-100/15 border border-white/10 shadow">
-          <div class="card-body">
-            <p>🏆 Excellent Performance in the "SCIENCE POSTER CONTEST - SPRING 2022-2023"</p>
-            <a class="link link-primary" href="https://surl.li/hhipqw" target="_blank">View Certificate</a>
-          </div>
-        </div>
-
-        <div class="card bg-base-100/15 border border-white/10 shadow">
-          <div class="card-body">
-            <p>💻 Completed the IT Essentials course (Cisco Networking Academy®)</p>
-            <a class="link link-primary" href="https://surl.li/yuxcyj" target="_blank">View Certificate</a>
-          </div>
-        </div>
       </div>
+
     </div>
+
+  </div>
+
+</section>
+
+<section id="courses" class="max-w-6xl mx-auto px-4 py-16">
+
+  <div class="glass rounded-3xl p-8 md:p-12 shadow-xl">
+
+    <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-10">
+      Courses & Training
+    </h2>
+
+    <div class="card bg-base-100/10 border border-white/10 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition duration-300">
+
+      <div class="card-body">
+
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <h3 class="text-xl font-bold text-primary">
+            Complete Web Development Course
+          </h3>
+
+          <span class="badge badge-primary badge-outline">
+            Ongoing
+          </span>
+        </div>
+
+        <p class="font-semibold">
+          Programming Hero (Online Bootcamp)
+        </p>
+
+        <p class="text-sm opacity-70">
+          📅 Duration: 6 Months | Started: December 31, 2025
+        </p>
+
+        <div class="mt-4">
+          <p class="font-semibold mb-2">Technologies Covered:</p>
+
+          <div class="flex flex-wrap gap-2">
+
+            <span class="badge badge-outline">HTML</span>
+            <span class="badge badge-outline">CSS</span>
+            <span class="badge badge-outline">Tailwind CSS</span>
+            <span class="badge badge-outline">JavaScript</span>
+            <span class="badge badge-outline">React</span>
+            <span class="badge badge-outline">Node.js</span>
+            <span class="badge badge-outline">Express.js</span>
+            <span class="badge badge-outline">MongoDB</span>
+            <span class="badge badge-outline">Next.js</span>
+            <span class="badge badge-outline">Firebase</span>
+            <span class="badge badge-outline">Git</span>
+            <span class="badge badge-outline">GitHub</span>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- ================= ACHIEVEMENTS ================= -->
+  <section id="achievements" class="max-w-6xl mx-auto px-4 py-16">
+
+    <div class="glass rounded-3xl p-8 md:p-12 shadow-xl">
+
+      <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-10">
+        Achievements & Certifications
+      </h2>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Achievement 1 -->
+        <div
+          class="card bg-base-100/10 border border-white/10 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition duration-300">
+
+          <div class="card-body items-center text-center">
+
+            <div class="text-4xl">🏆</div>
+
+            <h3 class="font-bold text-lg">
+              Science Poster Contest
+            </h3>
+
+            <p class="opacity-80 text-sm">
+              Excellent performance in the Science Poster Contest (Fall 2022-2023) as a Freshman at AIUB.
+            </p>
+
+            <div class="card-actions mt-3">
+              <a href="https://surl.li/bdrlxm" target="_blank" class="btn btn-outline btn-sm rounded-xl">
+                View Certificate
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Achievement 2 -->
+        <div
+          class="card bg-base-100/10 border border-white/10 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition duration-300">
+
+          <div class="card-body items-center text-center">
+
+            <div class="text-4xl">🥇</div>
+
+            <h3 class="font-bold text-lg">
+              Science Poster Contest
+            </h3>
+
+            <p class="opacity-80 text-sm">
+              Excellent performance in the Science Poster Contest (Spring 2022-2023) at AIUB.
+            </p>
+
+            <div class="card-actions mt-3">
+              <a href="https://surl.li/hhipqw" target="_blank" class="btn btn-outline btn-sm rounded-xl">
+                View Certificate
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Achievement 3 -->
+        <div
+          class="card bg-base-100/10 border border-white/10 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition duration-300">
+
+          <div class="card-body items-center text-center">
+
+            <div class="text-4xl">💻</div>
+
+            <h3 class="font-bold text-lg">
+              Cisco Networking Academy
+            </h3>
+
+            <p class="opacity-80 text-sm">
+              Successfully completed the IT Essentials course under Cisco Networking Academy® program.
+            </p>
+
+            <div class="card-actions mt-3">
+              <a href="https://surl.li/yuxcyj" target="_blank" class="btn btn-outline btn-sm rounded-xl">
+                View Certificate
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
   </section>
 
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="max-w-6xl mx-auto px-4 py-16">
 
-  <!-- ================= CONTACT (same idea) ================= -->
-  <section id="contact" class="max-w-6xl mx-auto px-4 py-10">
-    <div class="glass rounded-3xl p-6 md:p-10 shadow-xl">
-      <h2 class="text-2xl md:text-3xl font-extrabold mb-6">Contact Me</h2>
+    <div class="glass rounded-3xl p-8 md:p-12 shadow-xl">
 
-      <form id="contactForm" class="grid gap-4 max-w-xl">
-        <input type="text" placeholder="Your Name" required class="input input-bordered rounded-2xl w-full bg-base-100/10" />
-        <input type="email" placeholder="Your Email" required class="input input-bordered rounded-2xl w-full bg-base-100/10" />
-        <textarea placeholder="Your Message" required class="textarea textarea-bordered rounded-2xl w-full bg-base-100/10"></textarea>
-        <button type="submit" class="btn btn-primary rounded-2xl">Send Message</button>
-      </form>
+      <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-10">
+        Contact Me
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-10">
+
+        <!-- LEFT SIDE CONTACT INFO -->
+
+        <div class="space-y-6">
+
+          <h3 class="text-xl font-bold">Let's Work Together</h3>
+
+          <p class="opacity-80">
+            If you have any project idea, internship opportunity,
+            or collaboration proposal feel free to contact me.
+          </p>
+
+          <div class="space-y-3">
+
+            <p class="flex items-center gap-3">
+              📧
+              <span>marufhasanchowdhury06@gmail.com</span>
+            </p>
+
+            <p class="flex items-center gap-3">
+              📱
+              <span>+880 1704 712465</span>
+            </p>
+
+            <p class="flex items-center gap-3">
+              📍
+              <span>Dhaka, Bangladesh</span>
+            </p>
+
+          </div>
+
+          <div class="flex gap-4 pt-4">
+
+            <a href="https://github.com/maruf-hasan7081" class="btn btn-outline btn-sm rounded-xl">
+              GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/in/maruf-hasan-chowdhury/" class="btn btn-outline btn-sm rounded-xl">
+              LinkedIn
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- RIGHT SIDE FORM -->
+
+        <form id="contactForm" class="space-y-4">
+
+          <input type="text" placeholder="Your Name" required
+            class="input input-bordered rounded-xl w-full bg-base-100/10" />
+
+          <input type="email" placeholder="Your Email" required
+            class="input input-bordered rounded-xl w-full bg-base-100/10" />
+
+          <textarea rows="4" placeholder="Your Message" required
+            class="textarea textarea-bordered rounded-xl w-full bg-base-100/10"></textarea>
+
+          <button type="submit" class="btn btn-primary w-full rounded-xl text-lg">
+            Send Message
+          </button>
+
+        </form>
+
+      </div>
+
     </div>
+
   </section>
 
   <!-- Footer -->
   <footer class="max-w-6xl mx-auto px-4 pb-10">
-    <div class="glass rounded-2xl p-5 text-center opacity-80">
-      <p>© 2026 MyPortfolio | All Rights Reserved</p>
-    </div>
-  </footer>
 
+  <div class="glass rounded-2xl p-8 shadow-xl">
+
+    <div class="footer sm:footer-horizontal text-base-content">
+
+      <!-- LEFT SIDE -->
+      <aside>
+        <h2 class="text-xl font-bold text-primary">
+          Maruf Hasan Chowdhury
+        </h2>
+
+        <p class="opacity-80 mt-2 max-w-xs">
+          CSE Student & Web Developer passionate about building
+          modern web applications and AI-based solutions.
+        </p>
+      </aside>
+
+
+      <!-- QUICK LINKS -->
+      <nav>
+        <h6 class="footer-title">Quick Links</h6>
+        <a class="link link-hover" href="#home">Home</a>
+        <a class="link link-hover" href="#education">Education</a>
+        <a class="link link-hover" href="#experience">Experience</a>
+        <a class="link link-hover" href="#courses">Courses</a>
+        <a class="link link-hover" href="#projects">Projects</a>
+        <a class="link link-hover" href="#contact">Contact</a>
+      </nav>
+
+
+      <!-- SOCIAL (ONLY ONE) -->
+      <nav>
+        <h6 class="footer-title">Social</h6>
+
+        <div class="grid grid-flow-col gap-4">
+
+          <!-- GitHub -->
+          <a href="https://github.com/maruf-hasan7081"
+             target="_blank"
+             class="hover:text-primary transition"
+             aria-label="GitHub">
+            <!-- GitHub Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+              <path d="M12 .5C5.73.5.75 5.6.75 12c0 5.13 3.44 9.48 8.2 11 .6.12.82-.27.82-.6v-2.1c-3.34.74-4.04-1.65-4.04-1.65-.55-1.43-1.34-1.8-1.34-1.8-1.1-.77.08-.76.08-.76 1.2.09 1.83 1.27 1.83 1.27 1.08 1.9 2.83 1.35 3.52 1.03.11-.8.42-1.35.76-1.66-2.66-.31-5.46-1.37-5.46-6.1 0-1.35.46-2.45 1.23-3.32-.12-.31-.53-1.57.12-3.27 0 0 1-.33 3.3 1.27.96-.27 1.98-.4 3-.4 1.02 0 2.04.14 3 .4 2.3-1.6 3.3-1.27 3.3-1.27.65 1.7.24 2.96.12 3.27.77.87 1.23 1.97 1.23 3.32 0 4.74-2.8 5.78-5.47 6.09.43.39.81 1.16.81 2.33v3.45c0 .33.22.72.82.6 4.76-1.52 8.2-5.87 8.2-11C23.25 5.6 18.27.5 12 .5z"/>
+            </svg>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/maruf-hasan-chowdhury/"
+             target="_blank"
+             class="hover:text-primary transition"
+             aria-label="LinkedIn">
+            <!-- LinkedIn Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+              <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.95v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.35-1.85 3.58 0 4.24 2.36 4.24 5.43v6.31zM5.34 7.43c-1.14 0-2.06-.93-2.06-2.06 0-1.14.92-2.06 2.06-2.06 1.14 0 2.06.92 2.06 2.06 0 1.13-.92 2.06-2.06 2.06zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46C23.2 24 24 23.23 24 22.28V1.72C24 .77 23.2 0 22.23 0z"/>
+            </svg>
+          </a>
+
+          <!-- Email -->
+          <a href="mailto:marufhasanchowdhury06@gmail.com"
+             class="hover:text-primary transition"
+             aria-label="Email">
+            <!-- Mail Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+              <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+          </a>
+
+        </div>
+      </nav>
+
+    </div>
+
+
+    <!-- BOTTOM COPYRIGHT -->
+    <div class="text-center border-t border-white/10 mt-6 pt-4 opacity-70">
+      © 2026 Maruf Hasan Chowdhury | All Rights Reserved
+    </div>
+
+  </div>
+
+</footer>
 
   <script>
-    // ========== Theme toggle ==========
+    // Theme toggle
     const themeBtn = document.getElementById("theme-toggle");
     themeBtn.addEventListener("click", () => {
       const html = document.documentElement;
@@ -485,11 +1003,11 @@
       themeBtn.textContent = isDark ? "🌙" : "☀️";
     });
 
-    // ========== Project filtering ==========
+    // Project filtering
     const buttons = document.querySelectorAll(".filter-btn");
     const projects = document.querySelectorAll(".project");
 
-    function setActiveButton(activeBtn){
+    function setActiveButton(activeBtn) {
       buttons.forEach(b => {
         b.classList.add("btn-ghost");
         b.classList.remove("btn-primary");
@@ -498,7 +1016,7 @@
       activeBtn.classList.add("btn-primary");
     }
 
-    function filterProjects(filter){
+    function filterProjects(filter) {
       projects.forEach(p => {
         const ok = (filter === "all") || p.classList.contains(filter);
         p.style.display = ok ? "block" : "none";
@@ -522,4 +1040,5 @@
   </script>
 
 </body>
+
 </html>
