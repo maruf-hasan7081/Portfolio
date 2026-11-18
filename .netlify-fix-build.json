@@ -1,0 +1,12 @@
+{
+  "site_id": "ae57beae-70df-498b-882c-0d46af97da22",
+  "body": {
+    "build_settings": {
+      "cmd": "npm run build",
+      "provider": "github",
+      "repo_url": "https://github.com/maruf-hasan7081/Portfolio",
+      "repo_branch": "main",
+      "dir": ""
+    }
+  }
+}
