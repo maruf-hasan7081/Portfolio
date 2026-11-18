@@ -15,7 +15,20 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
-# Optional: proxy API through Netlify (same origin, no CORS). Replace YOUR-API hostname.
+# Contact form on live Netlify (Gmail SMTP via function env vars).
+[[redirects]]
+  from = "/api/v1/contact"
+  to = "/.netlify/functions/contact"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/v1/contact/"
+  to = "/.netlify/functions/contact"
+  status = 200
+  force = true
+
+# When Render API exists, add a rule BEFORE contact (more specific rules win) or proxy:
 # [[redirects]]
 #   from = "/api/*"
 #   to = "https://YOUR-API.onrender.com/api/:splat"
