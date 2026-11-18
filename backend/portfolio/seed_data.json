@@ -1,0 +1,374 @@
+{
+  "profile": {
+    "site_name": "Maruf",
+    "welcome_title": "Welcome to My Website",
+    "full_name": "MD. MARUF HASAN CHOWDHURY",
+    "nickname": "Maruf / Yeakin",
+    "research_interests": "Artificial Intelligence, Machine Learning, Deep Learning, Data Science, NLP, Computer Vision",
+    "development_skills": [
+      "Frontend: HTML, CSS, JavaScript",
+      "Backend: C#, Java, PHP, SQL"
+    ],
+    "current_study": "CSE Student at AIUB (11th Semester)",
+    "photo_url": "/media/maruf.jpeg",
+    "cv_pdf_url": "/media/MARUF_HASAN_CHOWDHURY-CV.pdf",
+    "video_cv_url": "/media/1772697477679_original-426f7631-9542-4938-8018-aeaf184e0bcb.mp4",
+    "video_cv_title": "Video CV",
+    "video_cv_subtitle": "Watch my video CV to learn more about me.",
+    "resume_section_title": "My Resume",
+    "show_video_cv": true,
+    "show_resume_section": true,
+    "email": "marufhasanchowdhury06@gmail.com",
+    "phone": "+880 1704 712465",
+    "location": "Dhaka, Bangladesh",
+    "contact_intro_title": "Let's Work Together",
+    "contact_intro_text": "If you have any project idea, internship opportunity, or collaboration proposal feel free to contact me.",
+    "footer_bio": "CSE Student & Web Developer passionate about building modern web applications and AI-based solutions.",
+    "copyright_year": 2026
+  },
+  "social_links": [
+    { "placement": "home", "label": "📧 Email", "url": "mailto:marufhasanchowdhury06@gmail.com", "sort_order": 1 },
+    { "placement": "home", "label": "💻 GitHub", "url": "https://github.com/maruf-hasan7081", "sort_order": 2 },
+    { "placement": "home", "label": "🔗 LinkedIn", "url": "https://www.linkedin.com/in/maruf-hasan-chowdhury/", "sort_order": 3 },
+    { "placement": "education", "label": "📧 Email", "url": "mailto:marufhasanchowdhury06@gmail.com", "sort_order": 1 },
+    { "placement": "education", "label": "📘 Facebook", "url": "https://www.facebook.com/maruphasan.chowdhury.9", "sort_order": 2 },
+    { "placement": "education", "label": "📱 WhatsApp", "url": "https://wa.me/01704712465", "sort_order": 3 },
+    { "placement": "education", "label": "💻 GitHub", "url": "https://github.com/maruf-hasan7081", "sort_order": 4 },
+    { "placement": "education", "label": "🔗 LinkedIn", "url": "https://www.linkedin.com/in/maruf-hasan-chowdhury/", "sort_order": 5 },
+    { "placement": "education", "label": "📸 Instagram", "url": "https://www.instagram.com/maruf__8048", "sort_order": 6 },
+    { "placement": "contact", "label": "GitHub", "url": "https://github.com/maruf-hasan7081", "sort_order": 1 },
+    { "placement": "contact", "label": "LinkedIn", "url": "https://www.linkedin.com/in/maruf-hasan-chowdhury/", "sort_order": 2 }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in CSE",
+      "institution": "American International University-Bangladesh (AIUB), Dhaka",
+      "details": "CGPA: 3.60 | 11th Semester Running",
+      "sort_order": 1
+    },
+    {
+      "degree": "Higher Secondary Certificate (HSC)",
+      "institution": "Scholastica Model College, Narsingdi",
+      "details": "GPA: 4.58 | Year: 2021",
+      "sort_order": 2
+    },
+    {
+      "degree": "Secondary School Certificate (SSC)",
+      "institution": "Ramgoti B.B.K Pilot Model High School",
+      "details": "GPA: 4.39 | Year: 2019",
+      "sort_order": 3
+    }
+  ],
+  "skill_groups": [
+    {
+      "title": "Programming Languages",
+      "sort_order": 1,
+      "items": [
+        { "label": "C++", "is_primary": true, "sort_order": 1 },
+        { "label": "Java", "is_primary": true, "sort_order": 2 },
+        { "label": "C#", "is_primary": true, "sort_order": 3 },
+        { "label": "Python", "is_primary": true, "sort_order": 4 },
+        { "label": "HTML", "is_primary": true, "sort_order": 5 },
+        { "label": "CSS", "is_primary": true, "sort_order": 6 },
+        { "label": "Tailwind", "is_primary": true, "sort_order": 7 },
+        { "label": "JavaScript", "is_primary": true, "sort_order": 8 },
+        { "label": "PHP", "is_primary": true, "sort_order": 9 }
+      ]
+    },
+    {
+      "title": "Database",
+      "sort_order": 2,
+      "items": [
+        { "label": "SQL", "is_primary": false, "sort_order": 1 },
+        { "label": "Microsoft SQL Server", "is_primary": false, "sort_order": 2 },
+        { "label": "MySQL", "is_primary": false, "sort_order": 3 }
+      ]
+    },
+    {
+      "title": "Tools & IDEs",
+      "sort_order": 3,
+      "items": [
+        { "label": "VS Code", "is_primary": false, "sort_order": 1 },
+        { "label": "Visual Studio", "is_primary": false, "sort_order": 2 },
+        { "label": "CodeBlocks", "is_primary": false, "sort_order": 3 },
+        { "label": "Google Colab", "is_primary": false, "sort_order": 4 },
+        { "label": "GitHub", "is_primary": false, "sort_order": 5 }
+      ]
+    },
+    {
+      "title": "Data Structure",
+      "sort_order": 4,
+      "items": [
+        { "label": "Linked List", "is_primary": false, "sort_order": 1 },
+        { "label": "Stack", "is_primary": false, "sort_order": 2 },
+        { "label": "Queue", "is_primary": false, "sort_order": 3 },
+        { "label": "Recursion", "is_primary": false, "sort_order": 4 },
+        { "label": "Graph", "is_primary": false, "sort_order": 5 },
+        { "label": "Dynamic Programming", "is_primary": false, "sort_order": 6 }
+      ]
+    },
+    {
+      "title": "Operating Systems",
+      "sort_order": 5,
+      "items": [
+        { "label": "Windows", "is_primary": false, "sort_order": 1 },
+        { "label": "Linux", "is_primary": false, "sort_order": 2 }
+      ]
+    },
+    {
+      "title": "Soft Skills",
+      "sort_order": 6,
+      "items": [
+        { "label": "Teamwork", "is_primary": false, "sort_order": 1 },
+        { "label": "Problem-Solving", "is_primary": false, "sort_order": 2 },
+        { "label": "Communication", "is_primary": false, "sort_order": 3 }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Payoo – Digital Wallet Web App",
+      "subtitle": "",
+      "description": "HTML, Tailwind CSS, DaisyUI, JavaScript DOM features.",
+      "image_url": "/media/pio.png",
+      "category": "web",
+      "live_url": "https://maruf-hasan7081.github.io/payoo-website/",
+      "github_url": "https://github.com/maruf-hasan7081/payoo-website",
+      "sort_order": 1
+    },
+    {
+      "title": "Job-Tracker Web App",
+      "subtitle": "",
+      "description": "HTML, Tailwind CSS, DaisyUI, JavaScript DOM features.",
+      "image_url": "/media/job.png",
+      "category": "web",
+      "live_url": "https://maruf-hasan7081.github.io/B13_A4/",
+      "github_url": "https://github.com/maruf-hasan7081/B13_A4",
+      "sort_order": 2
+    },
+    {
+      "title": "TechWave Web App",
+      "subtitle": "",
+      "description": "HTML, CSS.",
+      "image_url": "/media/Techwave.png",
+      "category": "web",
+      "live_url": "https://maruf-hasan7081.github.io/B13_A2/",
+      "github_url": "https://github.com/maruf-hasan7081/B13_A2",
+      "sort_order": 3
+    },
+    {
+      "title": "KV Web App",
+      "subtitle": "",
+      "description": "HTML, CSS.",
+      "image_url": "/media/KV.png",
+      "category": "web",
+      "live_url": "https://maruf-hasan7081.github.io/Assingment1/",
+      "github_url": "https://github.com/maruf-hasan7081/Assingment1",
+      "sort_order": 4
+    },
+    {
+      "title": "PHARMACY MANAGEMENT SYSTEM",
+      "subtitle": "",
+      "description": "C#, SQL SERVER",
+      "image_url": "/media/PARMACY.jpg",
+      "category": "csharp",
+      "live_url": "",
+      "github_url": "https://github.com/maruf-hasan7081/CSharp_Project",
+      "sort_order": 5
+    },
+    {
+      "title": "RESTAURANT MANAGEMENT SYSTEM",
+      "subtitle": "",
+      "description": "ORACLE DATABASE ONLY",
+      "image_url": "/media/PARMACY.jpg",
+      "category": "sql",
+      "live_url": "",
+      "github_url": "https://github.com/maruf-hasan7081/oracal-database",
+      "sort_order": 6
+    },
+    {
+      "title": "NLP PROJECT",
+      "subtitle": "FAKE NEWS DETECTION",
+      "description": "Data Loading → Cleaning → Preprocessing → TF-IDF → Train/Test → Naïve Bayes → Evaluation",
+      "image_url": "/media/fake.jpg",
+      "category": "nlp",
+      "live_url": "",
+      "github_url": "https://github.com/maruf-hasan7081/-Natural-language-processing--NLP-/blob/main/nlp_mid_project_group_08.pdf",
+      "sort_order": 7
+    },
+    {
+      "title": "NLP PROJECT",
+      "subtitle": "AI Content Detection (BERT & DistilBERT)",
+      "description": "Model-1: Load → Clean → Split → Tokenize (BERT) → Train → Evaluate\nModel-2: Load → Clean → Split → Tokenize (DistilBERT) → Train → Evaluate",
+      "image_url": "/media/ai-content-detectors.png",
+      "category": "nlp",
+      "live_url": "",
+      "github_url": "https://github.com/maruf-hasan7081/-Natural-language-processing--NLP-/blob/main/final/nlp_final_project_group_08.pdf",
+      "sort_order": 8
+    },
+    {
+      "title": "Software Engineering Documentation",
+      "subtitle": "",
+      "description": "Affordable Car and Motor Bike Subscription",
+      "image_url": "/media/appod.png",
+      "category": "software-engineering",
+      "live_url": "",
+      "github_url": "https://github.com/maruf-hasan7081/software-project",
+      "sort_order": 9
+    }
+  ],
+  "experiences": [
+    {
+      "title": "Java Development Intern",
+      "company": "Codveda Technologies (Remote)",
+      "badge": "Internship",
+      "date_range": "📅 3 Dec 2025 – 3 Jan 2026",
+      "highlights": [
+        "⚙️ Worked with Java OOP concepts and file handling.",
+        "🏦 Developed CRUD-based banking application logic.",
+        "🗄️ Implemented JDBC database operations.",
+        "🌳 Built Binary Search Tree (BST) data structure implementation.",
+        "💬 Developed a multithreaded chat application."
+      ],
+      "links": [
+        {
+          "label": "View Offer Letter",
+          "url": "https://github.com/maruf-hasan7081/Java_Development_Intern_work/blob/main/Md.Maruf%20Hasan%20Chowdhury(Offer%20letter).pdf"
+        },
+        {
+          "label": "Work",
+          "url": "https://github.com/maruf-hasan7081/Java_Development_Intern_work"
+        }
+      ],
+      "sort_order": 1
+    }
+  ],
+  "courses": [
+    {
+      "title": "Complete Web Development Course",
+      "provider": "Programming Hero (Online Bootcamp)",
+      "status": "Ongoing",
+      "duration_text": "📅 Duration: 6 Months | Started: December 31, 2025",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "Tailwind CSS",
+        "JavaScript",
+        "React",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Next.js",
+        "Firebase",
+        "Git",
+        "GitHub"
+      ],
+      "sort_order": 1
+    }
+  ],
+  "family_information": {
+    "slug": "family-information",
+    "page_kind": "family",
+    "title": "Family Information",
+    "subtitle": "Home page only — family summary, not mixed with Personal Info nav page.",
+    "home_summary": "বাবা-মা, ভাই-বোন, ঠিকানা ও পরিবার সম্পর্কিত বিবরণ। এখানে কোনো বাটন নেই — শুধু হোমে দেখা যায়।",
+    "home_image_url": "/media/maruf.jpeg",
+    "show_on_home": true,
+    "sections": [
+      {
+        "title": "Family record",
+        "sort_order": 1,
+        "description": "Admin থেকে মা-বাবার নাম ও অন্য ফিল্ড এডিট করুন। সেকশনে ছবি যোগ করলে হোম কার্ডে দেখাবে।",
+        "image_url": "",
+        "entries": [
+          { "label": "Father's name", "value": "Md. [Your father's full name]", "sort_order": 1 },
+          { "label": "Mother's name", "value": "Mrs. [Your mother's full name]", "sort_order": 2 },
+          { "label": "Grandfather (father's side)", "value": "Md. [Optional]", "sort_order": 3 },
+          { "label": "Grandmother (father's side)", "value": "[Optional]", "sort_order": 4 },
+          { "label": "Brother(s)", "value": "[Names, ages — or write None]", "sort_order": 5 },
+          { "label": "Sister(s)", "value": "[Names, ages — or write None]", "sort_order": 6 },
+          { "label": "Marital status", "value": "Unmarried", "sort_order": 7 },
+          { "label": "Spouse", "value": "N/A", "sort_order": 8 },
+          { "label": "Children", "value": "N/A", "sort_order": 9 },
+          { "label": "Date of birth", "value": "[DD Month YYYY]", "sort_order": 10 },
+          { "label": "Place of birth", "value": "Narsingdi, Bangladesh", "sort_order": 11 },
+          { "label": "Blood group", "value": "[e.g. B+]", "sort_order": 12 },
+          { "label": "Nationality", "value": "Bangladeshi", "sort_order": 13 },
+          { "label": "Religion", "value": "Islam", "sort_order": 14 },
+          { "label": "National ID (NID)", "value": "[Optional — edit in admin]", "sort_order": 15 },
+          { "label": "Passport number", "value": "[If applicable]", "sort_order": 16 },
+          { "label": "Present address", "value": "Kuratoli, Kuril, Dhaka, Bangladesh", "sort_order": 17 },
+          { "label": "Permanent address", "value": "Ramgoti, Narsingdi, Bangladesh", "sort_order": 18 },
+          { "label": "Home district", "value": "Narsingdi", "sort_order": 19 },
+          { "label": "Emergency contact", "value": "Md. [Name] — [relationship]", "sort_order": 20 },
+          { "label": "Emergency phone", "value": "+880 1XXX-XXXXXX", "sort_order": 21 },
+          { "label": "Guardian (if any)", "value": "N/A", "sort_order": 22 },
+          { "label": "Languages", "value": "Bengali (native), English (working proficiency)", "sort_order": 23 }
+        ]
+      }
+    ]
+  },
+  "personal_information": {
+    "slug": "personal-information",
+    "page_kind": "personal_life",
+    "title": "Personal Info",
+    "subtitle": "আমার জীবন, ছবি ও গল্প — পরিবার সেকশনের সাথে আলাদা। Nav → Personal Info দিয়ে এখানে আসবেন।",
+    "home_summary": "",
+    "home_image_url": "",
+    "show_on_home": false,
+    "sections": [
+      {
+        "title": "Life & moments",
+        "sort_order": 1,
+        "description": "যেভাবে চান তেমন শেয়ার করুন — প্রতিটি সেকশনে ছবি ও লেখা যোগ করতে পারবেন।",
+        "image_url": "/media/maruf.jpeg",
+        "entries": [
+          { "label": "About me", "value": "CSE at AIUB, web dev & AI enthusiast.", "sort_order": 1 },
+          { "label": "What I'm building", "value": "Portfolio, NLP projects, and internship-ready web apps.", "sort_order": 2 },
+          { "label": "Outside coding", "value": "Learning new tools, tech meetups, and helping peers debug.", "sort_order": 3 }
+        ]
+      },
+      {
+        "title": "Photo notes",
+        "sort_order": 2,
+        "description": "নতুন সেকশন বানিয়ে family / friends / campus ছবি আলাদা রাখুন।",
+        "image_url": "",
+        "entries": [
+          { "label": "Campus", "value": "AIUB, Dhaka — edit or replace with your story.", "sort_order": 1 },
+          { "label": "Travel / events", "value": "[Add text + upload image on this section in admin]", "sort_order": 2 }
+        ]
+      }
+    ]
+  },
+  "research_publications": [],
+  "achievements": [
+    {
+      "emoji": "🏆",
+      "title": "Science Poster Contest",
+      "description": "Excellent performance in the Science Poster Contest (Fall 2022-2023) as a Freshman at AIUB.",
+      "certificate_url": "https://surl.li/bdrlxm",
+      "sort_order": 1
+    },
+    {
+      "emoji": "🥇",
+      "title": "Java Workshop for Absolute Beginners",
+      "description": "I got this Certificate for Completing the \"Java Workshop for Absolute Beginners\" organized by Ostad",
+      "certificate_url": "https://drive.google.com/file/d/1E5DpH6bFHTrlXBx38wCkxL6qOFtbDHWz/view",
+      "sort_order": 2
+    },
+    {
+      "emoji": "🥇",
+      "title": "Science Poster Contest",
+      "description": "Excellent performance in the Science Poster Contest (Spring 2022-2023) at AIUB.",
+      "certificate_url": "https://surl.li/hhipqw",
+      "sort_order": 3
+    },
+    {
+      "emoji": "💻",
+      "title": "Cisco Networking Academy",
+      "description": "Successfully completed the IT Essentials course under Cisco Networking Academy® program.",
+      "certificate_url": "https://surl.li/yuxcyj",
+      "sort_order": 4
+    }
+  ]
+}

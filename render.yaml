@@ -1,0 +1,27 @@
+# Free Django API on Render (SQLite + seed on each deploy). See DEPLOY.md.
+# Optional: set DATABASE_URL to a free Neon Postgres URL for persistent DB.
+
+services:
+  - type: web
+    name: portfolio-api
+    runtime: python
+    plan: free
+    rootDir: backend
+    buildCommand: chmod +x build.sh && ./build.sh
+    startCommand: gunicorn config.wsgi:application --bind 0.0.0.0:$PORT
+    healthCheckPath: /api/v1/health/
+    envVars:
+      - key: DJANGO_SECRET_KEY
+        generateValue: true
+      - key: DJANGO_DEBUG
+        value: "false"
+      - key: PORTFOLIO_SEED_ON_DEPLOY
+        value: "1"
+      - key: SEED_ADMIN_PASSWORD
+        sync: false
+      - key: DJANGO_ALLOWED_HOSTS
+        sync: false
+      - key: CORS_ALLOWED_ORIGINS
+        sync: false
+      - key: DJANGO_CSRF_TRUSTED_ORIGINS
+        sync: false

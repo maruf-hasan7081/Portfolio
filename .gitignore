@@ -1,0 +1,33 @@
+# Node / Next.js
+node_modules/
+.next/
+out/
+npm-debug.log*
+
+# Env & secrets (never commit)
+.env
+.env.*
+!.env.example
+.env*.local
+
+# Python / Django
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+backend/venv/
+backend/.env
+backend/db.sqlite3
+backend/media/
+backend/staticfiles/
+*.log
+
+# OS junk
+desktop.ini
+Thumbs.db
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+*.swp
