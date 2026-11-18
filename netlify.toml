@@ -1,0 +1,23 @@
+# Next.js 16 — OpenNext adapter is applied automatically on Netlify.
+# Site URL: https://maruf-hasan-chowdhury-profile.netlify.app
+
+[build]
+  command = "npm run build"
+
+[build.environment]
+  NODE_VERSION = "20"
+  # Set in Netlify UI after Render API is live:
+  # NEXT_PUBLIC_API_URL = https://YOUR-API.onrender.com
+  # Or same-origin proxy (uncomment redirects below + use your Netlify URL as API_BASE).
+
+[[headers]]
+  for = "/media/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Optional: proxy API through Netlify (same origin, no CORS). Replace YOUR-API hostname.
+# [[redirects]]
+#   from = "/api/*"
+#   to = "https://YOUR-API.onrender.com/api/:splat"
+#   status = 200
+#   force = true

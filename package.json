@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export-fallback": "cd backend && python manage.py write_frontend_fallback",
     "start": "next start",
     "lint": "next lint"
   },

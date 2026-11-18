@@ -1,0 +1,72 @@
+{
+  "id": 3,
+  "slug": "personal-information",
+  "page_kind": "personal_life",
+  "title": "Personal Info",
+  "subtitle": "আমার জীবন, ছবি ও গল্প — পরিবার সেকশনের সাথে আলাদা। Nav → Personal Info দিয়ে এখানে আসবেন।",
+  "home_summary": "",
+  "home_image_url": "",
+  "show_on_home": false,
+  "sections": [
+    {
+      "id": 10,
+      "page": 3,
+      "title": "Life & moments",
+      "description": "যেভাবে চান তেমন শেয়ার করুন — প্রতিটি সেকশনে ছবি ও লেখা যোগ করতে পারবেন।",
+      "image_url": "/media/maruf.jpeg",
+      "sort_order": 1,
+      "entries": [
+        {
+          "id": 75,
+          "section": 10,
+          "label": "About me",
+          "value": "CSE at AIUB, web dev & AI enthusiast.",
+          "image_url": "",
+          "sort_order": 1
+        },
+        {
+          "id": 76,
+          "section": 10,
+          "label": "What I'm building",
+          "value": "Portfolio, NLP projects, and internship-ready web apps.",
+          "image_url": "",
+          "sort_order": 2
+        },
+        {
+          "id": 77,
+          "section": 10,
+          "label": "Outside coding",
+          "value": "Learning new tools, tech meetups, and helping peers debug.",
+          "image_url": "",
+          "sort_order": 3
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "page": 3,
+      "title": "Photo notes",
+      "description": "নতুন সেকশন বানিয়ে family / friends / campus ছবি আলাদা রাখুন।",
+      "image_url": "",
+      "sort_order": 2,
+      "entries": [
+        {
+          "id": 78,
+          "section": 11,
+          "label": "Campus",
+          "value": "AIUB, Dhaka — edit or replace with your story.",
+          "image_url": "",
+          "sort_order": 1
+        },
+        {
+          "id": 79,
+          "section": 11,
+          "label": "Travel / events",
+          "value": "[Add text + upload image on this section in admin]",
+          "image_url": "",
+          "sort_order": 2
+        }
+      ]
+    }
+  ]
+}

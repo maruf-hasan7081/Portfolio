@@ -47,19 +47,26 @@ Secrets stay local: `.env.local`, `backend/.env`, `EMAIL_HOST_PASSWORD`, etc. ar
 
 ---
 
-## 3. Frontend (Next.js) — [Vercel](https://vercel.com) (free)
+## 3. Frontend (Next.js) — [Netlify](https://www.netlify.com) (free)
 
-1. Import GitHub repo `Portfolio` on Vercel.
-2. Framework: **Next.js**, root directory: `.` (repo root).
-3. **Environment variable:**
+**Live URL:** `https://maruf-hasan-chowdhury-profile.netlify.app`
+
+1. Netlify → **Add new site** → **Import an existing project** → GitHub → `maruf-hasan7081/Portfolio`.
+2. Build settings are in `netlify.toml` (`npm run build`, Node 20). Deploy.
+3. Without a live API, the site still loads from `lib/portfolioFallback.json` (update with `npm run export-fallback` locally after admin edits).
+4. When Render API is ready, in Netlify **Site configuration → Environment variables**:
 
    ```
    NEXT_PUBLIC_API_URL=https://portfolio-api-xxxx.onrender.com
    ```
 
-   No trailing slash. Redeploy after changing it.
+   Put `https://maruf-hasan-chowdhury-profile.netlify.app` in Render `CORS_ALLOWED_ORIGINS`. Redeploy Netlify.
 
-4. Your site: `https://something.vercel.app` — put that exact URL in Render `CORS_ALLOWED_ORIGINS`.
+5. **Optional same-origin API** (contact form + CORS): in `netlify.toml`, uncomment the `/api/*` proxy redirect and set `NEXT_PUBLIC_API_URL` to `https://maruf-hasan-chowdhury-profile.netlify.app`.
+
+### Vercel (alternative)
+
+Same env var idea: `NEXT_PUBLIC_API_URL` → Render URL.
 
 ---
 
