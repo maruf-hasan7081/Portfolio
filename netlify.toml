@@ -15,6 +15,37 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
+# Read API on Netlify (until Render Django is linked via NEXT_PUBLIC_API_URL).
+[[redirects]]
+  from = "/api/v1/health/"
+  to = "/.netlify/functions/health"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/v1/health"
+  to = "/.netlify/functions/health"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/v1/portfolio/"
+  to = "/.netlify/functions/portfolio"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/v1/portfolio"
+  to = "/.netlify/functions/portfolio"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/v1/personal-information/*"
+  to = "/.netlify/functions/personal-information"
+  status = 200
+  force = true
+
 # Contact form on live Netlify (Gmail SMTP via function env vars).
 [[redirects]]
   from = "/api/v1/contact"

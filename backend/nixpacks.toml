@@ -1,0 +1,15 @@
+[phases.setup]
+nixPkgs = ["python312"]
+
+[phases.install]
+cmds = ["pip install -r requirements.txt"]
+
+[phases.build]
+cmds = [
+  "python manage.py migrate --noinput",
+  "PORTFOLIO_SEED_ON_DEPLOY=1 python manage.py seed_portfolio --admin-password ${SEED_ADMIN_PASSWORD:-maruf123}",
+  "python manage.py collectstatic --noinput",
+]
+
+[start]
+cmd = "gunicorn config.wsgi:application --bind 0.0.0.0:$PORT"
