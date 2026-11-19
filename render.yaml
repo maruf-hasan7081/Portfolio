@@ -15,8 +15,9 @@ services:
         generateValue: true
       - key: DJANGO_DEBUG
         value: "false"
+      # "1" only for first deploy — then set to "0" so admin edits are not wiped.
       - key: PORTFOLIO_SEED_ON_DEPLOY
-        value: "1"
+        value: "0"
       - key: SEED_ADMIN_PASSWORD
         sync: false
       # Optional override; settings.py also reads RENDER_EXTERNAL_HOSTNAME.
