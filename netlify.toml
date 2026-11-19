@@ -1,6 +1,9 @@
 # Next.js 16 — OpenNext adapter is applied automatically on Netlify.
 # Site URL: https://maruf-hasan-chowdhury-profile.netlify.app
 
+# IMPORTANT: In Netlify UI, leave "Publish directory" EMPTY for Next.js.
+# If it is set to `.next`, CSS/JS break (unstyled page).
+
 [build]
   command = "npm run build"
 
