@@ -52,6 +52,15 @@ ALLOWED_HOSTS = [
     if h.strip()
 ]
 
+# Render sets RENDER_EXTERNAL_HOSTNAME; health checks fail with 400 if host is missing.
+_render_host = os.getenv("RENDER_EXTERNAL_HOSTNAME", "").strip()
+if _render_host and _render_host not in ALLOWED_HOSTS:
+    ALLOWED_HOSTS.append(_render_host)
+if os.getenv("RENDER") or _render_host:
+    for host in (".onrender.com", "localhost", "127.0.0.1"):
+        if host not in ALLOWED_HOSTS:
+            ALLOWED_HOSTS.append(host)
+
 CSRF_TRUSTED_ORIGINS = [
     u.strip()
     for u in os.getenv("DJANGO_CSRF_TRUSTED_ORIGINS", "").split(",")

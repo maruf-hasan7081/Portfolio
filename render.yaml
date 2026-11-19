@@ -19,8 +19,9 @@ services:
         value: "1"
       - key: SEED_ADMIN_PASSWORD
         sync: false
+      # Optional override; settings.py also reads RENDER_EXTERNAL_HOSTNAME.
       - key: DJANGO_ALLOWED_HOSTS
-        sync: false
+        value: ".onrender.com"
       - key: CORS_ALLOWED_ORIGINS
         value: https://maruf-hasan-chowdhury-profile.netlify.app
       - key: DJANGO_CSRF_TRUSTED_ORIGINS
